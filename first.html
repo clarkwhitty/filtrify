@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/fitrify.js"></script>
+<link rel="stylesheet" href="css/filtrify.css">
+
+</head>
+<body>
+
+<div id="placeHolder"></div>
+
+<ul id="container">
+    <li data-genre="pop, rock, british, classic rock"> The Beatles </li>
+    <li data-genre="rock, british, blues, classic rock"> The Rolling Stones </li>
+    <li data-genre="alternative, electronic, female vocalists"> Björk </li>
+    <li data-genre="rock, alternative, grunge"> Foo Fighters </li>
+    <li data-genre="rock, classic rock"> Bruce Springsteen </li>
+    
+</ul>
+
+<script type="text/javascript">
+$(function() {
+
+	$.filtrify("container", "placeHolder");
+
+});
+</script>
+
+</body>
+</html>
